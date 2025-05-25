@@ -1,6 +1,10 @@
 # Tajik TransCyrillicSans Word Document Restorer
 
-This project restores Tajik text in Word documents that were originally typed using the TransCyrillicSans font. Sometimes, such text appears as Wingdings or other incorrect characters. This script replaces those with the correct Tajik Cyrillic characters using predefined mappings.
+This project restores Tajik text in Word documents that were originally typed using the TransCyrillicSans font. In modern systems, this text may appear as Wingdings-like symbols, boxes, or other incorrect characters. This script replaces those with the correct Tajik Cyrillic characters using predefined mappings.
+
+In the 1990s, many Tajik documents were created using custom Cyrillic font encodings that reused standard ASCII/Latin character slots (0–255), replacing English letters with Cyrillic-looking glyphs. Rarely used ASCII characters such as `{`, `}`, and `~` were sometimes mapped to Tajik-specific letters like `ӣ` or `ӯ`.
+
+These fonts worked visually—the correct letters appeared on screen—but they stored the wrong underlying character codes. As a result, the text became unreadable when the original font was missing or when opened in software that expects Unicode.
 
 ## Features
 
